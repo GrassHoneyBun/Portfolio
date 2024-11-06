@@ -1,0 +1,106 @@
+/* App.css */
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 20px;
+}
+
+.columns-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.projects {
+  text-align: left;
+  width: 90%;
+}
+
+.project-image-container {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.cards-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  width: 100%;
+  padding: 20px 0; /* Add padding to separate from image */
+  cursor: grab;
+}
+
+.cards-container:active {
+  cursor: grabbing; /* Indicate that the container is being grabbed */
+}
+
+
+.card {
+  flex: 0 0 auto;
+  margin-right: 10px; /* Add margin between cards */
+  background-color: #33085c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 10px;
+}
+
+.card:last-child {
+  margin-right: 0; /* Remove margin from last card */
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+.card-content a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
